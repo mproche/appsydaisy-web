@@ -8,9 +8,7 @@ const port = process.env.PORT || 8080;
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Define a route for the homepage
-app.get('/', (req, res) => {
-  res.send('<h1>Welcome to My Homepage</h1>');
-});
+app.get('/', (req, res) => {});
 
 // Start the server
 app.listen(port, () => {
