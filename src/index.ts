@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
   res.send('<h1>Welcome to My Homepage</h1>');
 });
 
-app.get('/usawahitt', (req, res) => {
-  res.send('<h1>Welcome to Usawa HITT</h1>');
+app.get('/usawahitt/privacy', (req, res) => {
+  res.sendFile(path.join(__dirname, './usawa-hitt/index.html'));
 });
 
 // Start the server
