@@ -5,15 +5,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Define a route for the homepage
 app.get('/', (req, res) => {
   res.send('<h1>Welcome to My Homepage</h1>');
-});
-
-app.get('/usawahitt/privacy', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/usawa-hitt/privacy.html'));
 });
 
 // Start the server
