@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/usawahitt/privacy', (req, res) => {
-  res.sendFile(path.join(__dirname, './usawa-hitt/privacy.html'));
+  res.sendFile(path.join('./usawa-hitt/privacy.html'));
 });
 
 // Start the server
