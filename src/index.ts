@@ -10,6 +10,11 @@ app.use(express.static(path.join(__dirname, '../public')));
 // Define a route for the homepage
 app.get('/', (req, res) => {});
 
+// Define a route for the homepage
+app.get('/dumb-money', (req, res) => {
+  res.send("Hello world, dumb money!")
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
